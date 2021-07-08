@@ -1,6 +1,6 @@
 const Country = () => {
   const view = `
-    <div class="Characters-inner">
+    <div class="Countries-inner">
       <article class="Countries-card">
         <img src="image" alt="name">
         <h2>Name</h2>

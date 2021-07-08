@@ -1,1 +1,1 @@
-(()=>{let e=document.createElement("h1");e.textContent="Mira mamaguevo",document.appendChild(e)})();
+console.log("Hello");
