@@ -3,6 +3,9 @@ const path = require("path");
 //This allows to work with html using webpack
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
+//This plugin is gonna copy our styles to the dist directory
+const CopyWebpackPlugin = require("copy-webpack-plugin");
+
 module.exports = {
   entry: "./src/index.js", //Entry point
   //Where to have the result of our js compiled to a simplier version of js
@@ -29,6 +32,10 @@ module.exports = {
       inject: true,
       template: "./public/index.html",
       filename: "./index.html",
+    }),
+
+    new CopyWebpackPlugin({
+      patterns: [{ from: "./src/styles/styles.css", to: "" }],
     }),
   ],
 };

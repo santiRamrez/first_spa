@@ -3,14 +3,14 @@ import getData from "../util/getData";
 const Home = async () => {
   const countries = await getData();
   const view = `
-     <div class="Characters">
+     <div class="country-container">
      ${countries
        .map(
          (country) => `
-      <article class="Character-item">
+      <article class="country-card">
         <a href="#/${country.nativeName}/">
-          <img src="${country.flag}" alt="${country.nativeName}">
-          <h2>${country.nativeName}</h2>
+          <div class="flag-container"><img src="${country.flag}" alt="${country.nativeName}"></div>  
+          <div class="name-container"><h2>${country.nativeName}</h2></div>
         </a>
       </article>
      `
