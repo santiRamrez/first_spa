@@ -8,9 +8,9 @@ const Home = async () => {
        .map(
          (country) => `
       <article class="country-card">
-        <a href="#/${country.nativeName}/">
-          <div class="flag-container"><img src="${country.flag}" alt="${country.nativeName}"></div>  
-          <div class="name-container"><h2>${country.nativeName}</h2></div>
+        <a href="#/${country.name}/">
+          <div class="flag-container"><img src="${country.flag}" alt="${country.name}"></div>  
+          <div class="name-container"><h2>${country.name}</h2></div>
         </a>
       </article>
      `
