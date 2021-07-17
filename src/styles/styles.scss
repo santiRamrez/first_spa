@@ -1,3 +1,5 @@
+@import "variables";
+
 * {
   padding: 0;
   margin: 0;
@@ -6,7 +8,6 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
-@import "./variables";
 $max-width-container: 1900px;
 
 a {
@@ -30,7 +31,8 @@ body {
 
 .Header {
   @include size(100%, 100vh);
-  background-image: url(../img/world-map.jpg);
+  background-image: url(../assets/img/world-map.jpg);
+  // background-color: #1eb437;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 0 10%;
