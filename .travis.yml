@@ -1,7 +1,9 @@
 language: node_js
 cache:
-  directories: -~/.npm
-node_js: -'12'
+  directories:
+    - ~/.npm
+node_js:
+  - "12"
 git:
   depth: 3
 script:
